@@ -1,0 +1,35 @@
+{% extends 'base_site.html' %}
+
+{% block content %}
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center red-text">Youtube Downloader</h1>
+      <div class="row center">
+        <h5 class="header col s12 light" style="color: #ffff;">Paste your link below to download the video of your choosing.</h5>
+      </div>
+
+      <form action="{% url 'detail' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" name="video" placeholder="Your video link">
+        <div class="row center" style="padding-top: 15px;">
+          <button class="btn-large waves-effect waves-light red" type="submit" name="action">Download
+            <i class="material-icons right">cloud_download</i>
+          </button>
+        </div>
+      </form>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer red">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="red-text text-lighten-3" href="https://github.com/Blademaster680">Blademaster680</a>
+      </div>
+    </div>
+  </footer>
+{% endblock content %}

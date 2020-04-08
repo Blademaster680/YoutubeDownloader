@@ -1,0 +1,10 @@
+asgiref==3.2.7
+certifi==2019.11.28
+Django==3.0.5
+gazpacho==0.9.1
+pafy==0.5.5
+pytz==2019.3
+sqlparse==0.3.1
+typing-extensions==3.7.4.2
+wincertstore==0.2
+youtube-dl==2020.3.24
