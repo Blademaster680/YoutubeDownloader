@@ -12,7 +12,7 @@
       <!-- Video Form -->
       <form action="{% url 'detail' %}" method="POST">
         {% csrf_token %}
-        <input type="text" name="video" placeholder="Your video link">
+        <input type="text" name="video" placeholder="Your video link" style="color: #ffffff">
         <div class="row center" style="padding-top: 15px;">
           <button class="btn-large waves-effect waves-light red" type="submit" name="action">Download
             <i class="material-icons right">cloud_download</i>
